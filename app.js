@@ -32,23 +32,23 @@ const vocabBank = [
         name: "Greetings",
         phrases: [
             {
-                english: "Hello",
-                cantonese: "nei5 hou2",
-                vietnamese: "Xin chào",
-                japanese: "こんにちは"
-              },
-              {
-                english: "Good morning",
-                cantonese: "zou2 san4",
-                vietnamese: "Chào buổi sáng",
-                japanese: "おはよう"
-              },
-              {
-                english: "Good night",
-                cantonese: "zou2 tau2",
-                vietnamese: "Chào buổi tối",
-                japanese: "おやすみ"
-              },
+            english: "Hello",
+            cantonese: "nei5 hou2",
+            vietnamese: "Xin chào",
+            japanese: "こんにちは"
+            },
+            {
+            english: "Good morning",
+            cantonese: "zou2 san4",
+            vietnamese: "Chào buổi sáng",
+            japanese: "おはよう"
+            },
+            {
+            english: "Good night",
+            cantonese: "zou2 tau2",
+            vietnamese: "Chào buổi tối",
+            japanese: "おやすみ"
+            },
         ]
     }
 ];
