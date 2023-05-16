@@ -50,6 +50,29 @@ const vocabBank = [
             japanese: "おやすみ"
             },
         ]
+    },
+    {
+        name: "Repeat Request",
+        phrases: [
+            {
+            english: "Say it again, please.",
+            cantonese: "m4 goi1 gong2 do1 ci3",
+            vietnamese: "Xin nói lại lần nữa.",
+            japanese: "もう一度言ってください"
+            },
+            {
+            english: "Please say it slowly.",
+            cantonese: "m4 goi1 gong2 maan6 di1",
+            vietnamese: "Xin nói chậm lại.",
+            japanese: "ゆっくり言ってください"
+            },
+            {
+            english: "Can you repeat, please?",
+            cantonese: "m4 goi1 gong2 do1 ci3",
+            vietnamese: "Bạn có thể nói lại được không?",
+            japanese: "もう一度、お願いします"
+            },
+        ]
     }
 ];
 
