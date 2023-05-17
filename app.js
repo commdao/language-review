@@ -73,7 +73,7 @@ const vocabBank = [
             japanese: "もう一度、お願いします"
             },
         ]
-    }
+    },
     {
         name: "Numbers",
         phrases: [
