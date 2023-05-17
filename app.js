@@ -74,6 +74,41 @@ const vocabBank = [
             },
         ]
     }
+    {
+        name: "Numbers",
+        phrases: [
+            {
+            english: "1",
+            cantonese: "jat1",
+            vietnamese: "Một",
+            japanese: "一"
+            },
+            {
+            english: "2",
+            cantonese: "ji6",
+            vietnamese: "Hai",
+            japanese: "二"
+            },
+            {
+            english: "3",
+            cantonese: "saam1",
+            vietnamese: "Ba",
+            japanese: "三"
+            },
+            {
+            english: "4",
+            cantonese: "sei3",
+            vietnamese: "Bốn",
+            japanese: "四"
+            },
+            {
+            english: "5",
+            cantonese: "ng5",
+            vietnamese: "Năm",
+            japanese: "五"
+            },
+        ]
+    }
 ];
 
 const categorySelect = document.getElementById("category-select");
