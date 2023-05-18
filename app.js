@@ -108,6 +108,29 @@ const vocabBank = [
             japanese: "五"
             },
         ]
+    },
+    {
+        name: "Apologies",
+        phrases: [
+            {
+            english: "I'm sorry / Excuse me (formal)",
+            cantonese: "deoi3 m4 zyu6",
+            vietnamese: "Tôi xin lỗi",
+            japanese: "ごめんなさい"
+            },
+            {
+            english: "I'm sorry / Excuse me",
+            cantonese: "m4 hou2 ji3 si3",
+            vietnamese: "Xin lỗi",
+            japanese: "すみません"
+            },
+            {
+            english: "No problem",
+            cantonese: "m4 gan2 jiu3",
+            vietnamese: "Không sao",
+            japanese: "とんでもない"
+            },
+        ]
     }
 ];
 
