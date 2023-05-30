@@ -2,6 +2,11 @@
 <html>
 <head>
   <style>
+    .swiper {
+      width: 600px;
+      height: 600px;
+    }
+
     .table-container {
         padding: 10px;
         margin: 20px;
@@ -36,22 +41,33 @@
   </style>
 </head>
 <body>
-    <label for="category-select">Choose Your Phrase Set</label>
-    <select name="" id="category-select"></select>
-    <button onclick="displaySelectedCategory()">Choose Your Phrases</button>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <label for="category-select">Choose Your Phrase Set</label>
+      <select name="" id="category-select"></select>
+      <button id="choose-phrases-button">Choose Your Phrases</button>
 
-    <table class="phrases-table">
-      <thead>
-        <tr>
-          <th>English</th>
-          <th>Cantonese</th>
-          <th>Vietnamese</th>
-          <th>Japanese</th>
-        </tr>
-      </thead>
-      <tbody id="phrases-body"></tbody>
-    </table>
+      <table class="phrases-table">
+        <thead>
+          <tr>
+            <th>English</th>
+           <th>Cantonese</th>
+            <th>Vietnamese</th>
+            <th>Japanese</th>
+          </tr>
+        </thead>
+        <tbody id="phrases-body"></tbody>
+      </table>
+    </div>
+  </div>
+<script type="module">
+  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
 
+  const swiper = new Swiper('.swiper', {
+    direction:'vertical',
+    loop: true,
+})
+</script>
 <script src="app.js">
   // Add your audio playback functionality here using JavaScript
   var audioButtons = document.querySelectorAll('.audio-btn');

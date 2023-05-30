@@ -135,27 +135,31 @@ const vocabBank = [
 ];
 
 const categorySelect = document.getElementById("category-select");
+const choosePhrasesButton = document.getElementById("choose-phrases-button");
+
 vocabBank.forEach(category => {
-    const option = document.createElement("option");
-    option.value = category.name;
-    option.textContent = category.name;
-    categorySelect.appendChild(option);
+  const option = document.createElement("option");
+  option.value = category.name;
+  option.textContent = category.name;
+  categorySelect.appendChild(option);
 });
 
 function displaySelectedCategory() {
-    const selectedCategory = categorySelect.value;
-    const category = vocabBank.find((category) => category.name === selectedCategory);
-    
-    if (category){
-        const tableBody = document.getElementById("phrases-body");
-        tableBody.innerHTML = "";
+  const selectedCategory = categorySelect.value;
+  const category = vocabBank.find((category) => category.name === selectedCategory);
+  
+  if (category){
+    const tableBody = document.getElementById("phrases-body");
+    tableBody.innerHTML = "";
 
-        category.phrases.forEach(phrase => {
-            const row = tableBody.insertRow();
-            row.insertCell().textContent = phrase.english;
-            row.insertCell().textContent = phrase.cantonese;
-            row.insertCell().textContent = phrase.vietnamese;
-            row.insertCell().textContent = phrase.japanese;
-        });
-    }
+    category.phrases.forEach(phrase => {
+      const row = tableBody.insertRow();
+      row.insertCell().textContent = phrase.english;
+      row.insertCell().textContent = phrase.cantonese;
+      row.insertCell().textContent = phrase.vietnamese;
+      row.insertCell().textContent = phrase.japanese;
+    });
+  }
 }
+
+choosePhrasesButton.addEventListener("click", displaySelectedCategory);
