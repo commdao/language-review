@@ -1,0 +1,81 @@
+* {
+    font-size: 1.1rem;
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #333;
+}
+
+.phrase-selection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#category-select {
+    padding: 10px;
+    margin-right: 10px;
+  }
+
+#choose-phrases-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #B93C8A;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#choose-phrases-button:hover {
+    background-color: #FFC0CB;
+}
+
+body {
+    background-color: #6F3662;
+    color: white;
+}
+
+.table-container {
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid #ccc;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    color: #F0F0F0;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #000;
+}
+
+th {
+    text-align: center;
+    font-weight: bold;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+    width: 25%;
+}
+
+th:nth-child(2),
+td:nth-child(2),
+th:nth-child(3),
+td:nth-child(3) {
+    width: 25%;
+    
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+    width: 25%;
+}

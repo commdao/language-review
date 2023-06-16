@@ -1,51 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-    .swiper {
-      width: 600px;
-      height: 600px;
-    }
-
-    .table-container {
-        padding: 10px;
-        margin: 20px;
-        border: 1px solid #ccc;
-    }
-
-    table {
-      border-collapse: collapse;
-      width: 100%;
-    }
-  
-    th, td {
-      padding: 8px;
-      text-align: left;
-      border-bottom: 1px solid #ddd;
-      border-right: 1px solid #000;
-    }
-
-    th:nth-child(1),
-    td:nth-child(1) {
-        width: 15%;
-    }
-
-    th:nth-child(2),
-    td:nth-child(2),
-    th:nth-child(3),
-    td:nth-child(3),
-    th:nth-child(4),
-    td:nth-child(4) {
-            width: 25%;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="swiper">
-    <div class="swiper-wrapper">
-      <label for="category-select">Choose Your Phrase Set</label>
-      <select name="" id="category-select"></select>
-      <button id="choose-phrases-button">Choose Your Phrases</button>
+  <div class="phrase-selection">
+    <select name="category-select" id="category-select">
+      <option value="" selected disabled>Choose Your Phrase Set</option>
+    </select>
+    <button id="choose-phrases-button">Select</button>
+  </div>
 
       <table class="phrases-table">
         <thead>
@@ -58,16 +22,6 @@
         </thead>
         <tbody id="phrases-body"></tbody>
       </table>
-    </div>
-  </div>
-<script type="module">
-  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
-
-  const swiper = new Swiper('.swiper', {
-    direction:'vertical',
-    loop: true,
-})
-</script>
 <script src="app.js">
   // Add your audio playback functionality here using JavaScript
   var audioButtons = document.querySelectorAll('.audio-btn');
