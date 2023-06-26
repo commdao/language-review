@@ -131,5 +131,22 @@
             "japanese": "とんでもない"
             }
         ]
+    },
+    {
+        "name": "Temperature",
+        "phrases": [
+            {
+            "english": "cold",
+            "cantonese": "dung3",
+            "vietnamese": "rất lạnh",
+            "japanese": "寒い"
+            },
+            {
+            "english": "hot",
+            "cantonese": "jit6",
+            "vietnamese": "rất nóng",
+            "japanese": "暑い"
+            }
+        ]
     }
 ]
