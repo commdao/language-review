@@ -4,7 +4,7 @@ fetch('./vocab-data.json')
     vocabBank = data;
     
     const categorySelect = document.getElementById("category-select");
-    const choosePhrasesButton = document.getElementById("choose-phrases-button");
+
 
     vocabBank.forEach(category => {
       const option = document.createElement("option");
@@ -31,7 +31,7 @@ fetch('./vocab-data.json')
       }
     }
 
-    choosePhrasesButton.addEventListener("click", displaySelectedCategory);
+    categorySelect.addEventListener("change", displaySelectedCategory);
   })
   .catch(error => {
     console.error('Error loading vocabulary data:', error);
